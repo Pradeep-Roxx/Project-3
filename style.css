@@ -61,28 +61,36 @@ img{
     font-weight: 400;
 }
 
-.star{
+.Rating{
     display: flex;
     gap: 15px;
     padding-top: 5px;
     
 }
 
-.star-group ion-icon{
-    color: rgb(130, 99, 99);
+.star{
+    border: none;
+    background-color: unset;
+    color: rgb(255, 246, 73);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
-.star-group ion-icon:nth-child(1),
-.star-group ion-icon:nth-child(2),
-.star-group ion-icon:nth-child(3)
-{
-    color: rgb(246, 255, 0);
+.current-rat{
+    color: rgba(227, 232, 201, 0.595);
+    font-size: 17px;
+    font-weight: 200;
+    padding-top: 4px;
 }
 
+.Rev{
+    padding-top: 4px;
+}
 .right-card h4{
     margin: 15px 0px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .right-card h4 span{
