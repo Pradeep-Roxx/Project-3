@@ -26,6 +26,23 @@ function moveImage()
 
 }
 
+const stars=document.querySelectorAll('.star');
+const current_rating=document.querySelector('.current-rat');
+stars.forEach((star,index)=>{
+    star.addEventListener('click',()=>{
+        let current_star=index+1;
+        current_rating.innerText=`${current_star} of 5`;
+
+        stars.forEach((star,i)=>{
+            if(current_star>=i+1){
+                star.innerHTML=`&#9733`;
+            }else{
+                star.innerHTML=`&#9734`;
+            }
+        })
+    })
+})
+
 const minusBtn=document.querySelector('.minus');
 const plusBtn=document.querySelector('.plus');
 const qtyTxt=document.querySelector('#qty');
@@ -47,3 +64,4 @@ plusBtn.addEventListener('click',()=>{
     }
 
 });
+
